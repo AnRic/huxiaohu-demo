@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("test")
-@Slf4j
-public class TestController {
+@RequestMapping("test/topic")
+@Slf4j(topic = "test")
+public class TestTopicController {
 
     @RequestMapping("info")
     public String info(String content) {
